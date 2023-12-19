@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce- shopping kart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+        <div class="container">
+            <a class="navbar-brand d-files justify-content-between-align-items-center order-lg-0 " href="index.html">
+                <img src="images/logo.png " width="30" height="30" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2">Shopping Kart</span>
+            </a>
+            <div class="order-lg-2 nav-btns ">
+                <button type="button" class="" btn position-relative>
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="postion-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="" btn position-relative>
+                    <i class="fa fa-heart"></i>
+                    <span class="postion-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="" btn position-relative>
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggler="collapse" data-bs-target="navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#collections">collections</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#blogs">blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#About">about us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#newsletter">contact </a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+
+    <header id="header" class="vh-100 carousel slide" data-bs-ride=" carousel" style="padding-top:140px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Best Collecetion</h2>
+                <h1 class="" text-uppercase py-2 fw-bold text-white>New Arrivals</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Shop now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Best Price & offer</h2>
+                <h1 class="" text-uppercase py-2 fw-bold text-white>New Arrivals</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Buy now</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+
+    <section id="collections" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">NEW COLLECTIONS</h2>
+            </div>
+            <div class="row gx-0">
+                <div class=" d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".best">Best Sellers</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".feat">Featured</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".new">New Arrivals</button>
+                </div>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-list mt-4">
+                            <img src="images/casual shirt.jpg" class=" w-75 vh-75 ">
+                        </div>
+                        <div class="text-start">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Casual shirts</p>
+                            <span class="fw-bold">$25.67</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-list mt-4">
+                            <img src="images/formal shirts.jpg" class=" w-75 vh-75">
+                        </div>
+                        <div class="text-start">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Formal Shirts</p>
+                            <span class="fw-bold">$26.67</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-list mt-4">
+                            <img src="images/tshirt.jpg" class=" w-75 vh-75">
+                        </div>
+                        <div class="text-start">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">T-shirt</p>
+                            <span class="fw-bold">$30.67</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2  best">
+                        <div class="collection-list mt-4">
+                            <img src="images/Kids Fashion.jpg" class=" w-75 vh-75 ">
+                        </div>
+                        <div class="text-start">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Kids Fashion</p>
+                            <span class="fw-bold">$56.77</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-list mt-4">
+                            <img src="images/coat suit.jpg" class=" w-75 vh-75 feat ">
+                        </div>
+                        <div class="text-start">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Coat Suit</p>
+                            <span class="fw-bold">$50.47</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2  new">
+                        <div class="collection-list mt-4">
+                            <img src="images/hoddies.jpg" class=" w-75 vh-75 ">
+                        </div>
+                        <div class="text-start">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Huddies</p>
+                            <span class="fw-bold">$76.77</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+                        <div class="collection-list mt-4">
+                            <img src="images/Jeans.jpg" class=" w-75 vh-75 new">
+                        </div>
+                        <div class="text-start">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Jeans</p>
+                            <span class="fw-bold">$78.65</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+                        <div class="collection-list mt-4">
+                            <img src="images/prefumes.jpg" class=" w-75 vh-75  new">
+                        </div>
+                        <div class="text-start">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Prefumes</p>
+                            <span class="fw-bold">$108.67</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="special" class="py-5">
+        <div class="Container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">SPECIAL SECTIONS</h2>
+            </div>
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/Couple Sunglass.jpg" class="w-100">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Couple SunGlass</p>
+                        <span class="fw-bold d-block">$209.56</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/couple sweat shirt.jpg" class="w-100">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Couple SweatShirt</p>
+                        <span class="fw-bold d-block">$300.56</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/couple t-shirts.jpg" class="w-100">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Couple T-shirt</p>
+                        <span class="fw-bold d-block">$400.56</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/wedding dress.jpg" class="w-100">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Wedding Dress</p>
+                        <span class="fw-bold d-block">$1200.56</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div
+                class="row d-flex align-items-center text-center  justify-content-center justify-content-lg-start  text-lg-start">
+                <div class="offers-content">
+                    <span class="text-white">Discount up to 40% </span>
+                    <h2 class="mt-2 mb-4 text-white">Grand sale offer!</h2>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">OUR LATEST BLOGS</h2>
+            </div>
+
+
+
+            <div class="row g-3">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/shoes.jpg" class=" p-3 w-50 vh-50">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Casual Shoes</h4>
+                        <p class="card-title mt-3 text-muted">Share tips on maintaining healthy feet.
+                            Discuss the impact of shoe choices on foot health, rovide tips on how to extend the life of
+                            your favorite shoes.
+                            Provide advice on choosing the right athletic shoes for different activities.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> Delli
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/jerkin.jpg" class=" p-3 w-50 vh-50">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Jerkin</h4>
+                        <p class="card-title mt-3 text-muted">erkin can also refer to a style of dance that originated
+                            in Los Angeles in the late 2000s.
+                            The dance style is often associated with a particular type of music called "jerkin' music."
+                            It gained popularity through online videos and social media.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> Victor
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/blankets.jpg" class=" p-3 w-50 vh-50">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Blankets</h4>
+                        <p class="card-title mt-3 text-muted">Thread count refers to the number of threads woven into
+                            one square inch of fabric. Generally,
+                            higher thread counts are associated with softer and more durable sheets.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author:</span> HenryJohn
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="About" class="py-5">
+        <div class="Container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About us</h2>
+                    </div>
+                    <p class="lead text-muted ">In e-commerce, a virtual shopping cart is a software application that
+                        allows
+                        online shoppers to add products to their cart while browsing a website.</p>
+                    <p>Users can review the items in their cart, modify quantities, and proceed to checkout when ready
+                        to make a purchase.
+                        Shopping carts typically store information about selected products, quantities,
+                        and prices until the user completes the transaction.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/about us.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4"> NEWSLETTER SUBSCRIPTION</h2>
+                </div> 
+                <p class="text-center text-muted">We are excited to invite you to subscribe to the Shopping Kart newsletter! By subscribing, you'll be the first to receive 
+                    exclusive updates, special offers, and exciting news delivered directly to your inbox.</p>
+                    <div class="input-group mb-3 mt-3">
+                        <input type="text" class="form-control" placeholder="Enter your Email....">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </div> 
+                </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">SHOPPING KART</a>
+                    <p class="text-white  mt-3">If so, a shopping Kart is a wheeled vehicle that you use in a supermarket or other retail store to transport your selected items from one aisle to another until you're ready to check out.
+                         It's a convenient way for shoppers to collect and organize their products while navigating the store.</p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                        <a href = "#" class="text-white text-decoration-none">
+                            <i class ="fas fa-chevron-rightme-1">Home</i>
+                        </a> 
+                    </li>
+                    <li class="my-3">
+                        <a href = "#" class="text-white text-decoration-none">
+                            <i class ="fas fa-chevron-rightme-1">Collections</i>
+                        </a> 
+                    </li>
+                    <li class="my-3">
+                        <a href = "#" class="text-white text-decoration-none">
+                            <i class ="fas fa-chevron-rightme-1">Blogs</i>
+                        </a> 
+                    </li>
+                    <li class="my-3">
+                        <a href = "#" class="text-white text-decoration-none">
+                            <i class ="fas fa-chevron-rightme-1">Aboutus</i>
+                        </a> 
+                    </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-5">Contact us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Albert john, New York, WE 76, united kingdom,
+                            states of America
+                        </span>
+                    </div>
+
+                    <div class="d-flex justify-content-start align-items-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            Ecommerce1234@gmail.com
+                        </span>
+                    </div>
+
+                    <div class="d-flex justify-content-start align-items-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            (+!44)+24424 009
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                <div>
+                        <ul class="list-unstyled d-flex"></ul>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none fs-4 me-4">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none fs-4 me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none fs-4 me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white text-decoration-none fs-4 me-4">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

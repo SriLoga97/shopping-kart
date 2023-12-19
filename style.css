@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+:root{
+    --sm-font:'Poppins',sans-serif;
+    --pink: #e5342e;
+}
+
+body{
+    font-family: var(--sm-font);
+}
+.bg-primary{
+    background-color:var(--pink)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: aliceblue;
+    color:black;
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgba(85,85,85,85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: #e5342e;
+    color: aliceblue;
+    border-color: var(--pink);
+}
+.text-primary{
+    color: var(--pink)!important;
+}
+.navbar{
+    box-shadow : 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand span{
+    letter-spacing: 2px; 
+    font-family: var(--sm-font);
+}
+.nav-link:hover{
+    color:var(--pink)!important;
+     
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0,0,0,0.05);
+}
+
+#header{
+    background: url(images/fashion\ wallpaper.jpg)top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--sm-font);
+}
+.carousel-item .btn{
+    border-color:azure!important;
+}
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+}
+
+.title h2::before{
+    position:absolute;
+    content:"";
+    width: 4px;
+    height: 40px;
+    background-color: var(--pink);
+    left: -20px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.active-filter-btn{
+    background-color:var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+.filter-button-group  .btn:hover{
+    color:#fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-list .img{
+        transition: all 0.3s ease;
+}
+.special-img:hover img{
+    transform:scale(1.2);
+}
+#offers{
+    background: url(images/mens\ fashion.jpg)center/cover no-repeat;
+    min-height: 50vh;
+}
+#offers .row{
+    min-height: 60vh;
+
+}
+.offers span{
+    font-size: 20px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.offers-content btn{
+    border-color: transparent!important;
+}
+#newsletter{
+    background-color: rgba(179,179,179,0.5);
+}
+#newletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius:25px ;
+    border-bottom-left-radius:25px ;
+}
+#newsletter .btn{
+    background-color: var(--pink);
+    color: aliceblue;
+    border-color: var(--pink);
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color:#000;
+}
+
+footer .brand{
+    font-family: var(--sm-font);
+    letter-spacing:2px;
+
+}
+footer a{
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color:var(--pink)!important;
+}
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+
+}
